@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IONIC Health - JPR2023</title>
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="master.css">
 </head>
 <body>
@@ -17,9 +18,34 @@
                 <source src="img/nComand_v01_portugues.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="apresentacao">
-
+        <div class="apresentacao owl-carousel owl-theme">
+            <img class="item" src="img/nCommand-slide01.jpg">
+            <img class="item" src="img/nCommand-slide02.jpg">
+            <img class="item" src="img/nCommand-slide03.jpg">
+            <img class="item" src="img/nCommand-slide04.jpg">
+            <img class="item" src="img/nCommand-slide05.jpg">
+            <img class="item" src="img/nCommand-slide06.jpg">
+            <img class="item" src="img/nCommand-slide07.jpg">
+            <img class="item" src="img/nCommand-slide08.jpg">
         </div>
     </div>
+    <div class="rodape">
+        <a class="voltar" href="index.html"><img src="img/circle-chevron-left.svg"> Voltar</a>
+        <img src="img/ionic-logo.svg" alt="">
+    </div>
+
+    <!-- scripts -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:50,
+            // nav:true,
+            items:1,
+            autoHeight:true
+        })
+    </script>
 </body>
 </html>
